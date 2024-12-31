@@ -1,4 +1,4 @@
-package dev.trindadedev.template.build
+package com.syntaxspin.ffmpeg.build
 
 import java.io.File
 

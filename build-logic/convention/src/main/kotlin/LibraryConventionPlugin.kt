@@ -14,27 +14,27 @@ class LibraryConventionPlugin : Plugin<Project> {
     apply(plugin = "org.jetbrains.kotlin.android")
     
     extensions.configure<LibraryExtension> {
-      compileSdk = 35
-      buildToolsVersion = "35.0.0"
+      compileSdk = 34
+      buildToolsVersion = "34.0.0"
       
       defaultConfig {
         minSdk = 26
       }
       
       compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_21
-        targetCompatibility = JavaVersion.VERSION_21
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
       }
     }
     
     extensions.configure<JavaPluginExtension> {
       toolchain {
-        languageVersion.set(JavaLanguageVersion.of(21))
+        languageVersion.set(JavaLanguageVersion.of(17))
       }
     }
     
     extensions.configure<KotlinAndroidProjectExtension> {
-      jvmToolchain(21)
+      jvmToolchain(17)
     }
   }
 }

@@ -1,4 +1,4 @@
-package dev.trindadedev.template.build
+package com.syntaxspin.ffmpeg.build
 
 @SuppressWarnings("unused")
 object VersionUtils {

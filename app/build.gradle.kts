@@ -1,5 +1,5 @@
-import dev.trindadedev.template.build.BuildConfig
-import dev.trindadedev.template.build.VersionUtils
+import com.syntaxspin.ffmpeg.build.BuildConfig
+import com.syntaxspin.ffmpeg.build.VersionUtils
 
 plugins {
   alias(libs.plugins.template.application)
